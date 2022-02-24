@@ -15,6 +15,10 @@ const hotelSchema = new mongoose.Schema(
       type: 'String',
       required: [true, 'A product must have a photo'],
     },
+    public_id: {
+      type: 'String',
+      required: [true, 'A product must have a public id'],
+    },
     description: {
       type: String,
       trim: true,

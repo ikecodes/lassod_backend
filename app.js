@@ -29,13 +29,8 @@ app.use(cors());
 app.options('*', cors());
 //serving static files
 app.use(express.static(path.join(__dirname, 'public')));
-
-//http security headers
 app.use(helmet());
-//development logging
-// app.use(morgan('dev'));
 
-// limit requests for api
 const limiter = rateLimit({
   max: 100,
   windowsMs: 60 * 60 * 1000,
