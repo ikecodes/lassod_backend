@@ -33,8 +33,8 @@ exports.getHotels = catchAsync(async (req, res, next) => {
 exports.update = catchAsync(async (req, res, next) => {
   var objRooms = {
     _id: new ObjectId(),
-    name: 'double standard room',
-    price: 12000,
+    name: 'standard room',
+    price: 9000,
     image:
       'https://media.hotels.ng/img/h1438118/swiss-international-beland-hotel-1438118-25.jpg',
   };

@@ -13,10 +13,10 @@ const app = require('./app');
 ///git test
 const localDB = 'mongodb://localhost:27017/lassad';
 const DB =
-  'mongodb+srv://frank:2evaahpe84z9vRPD@cluster0.ege29.mongodb.net/cryton2?retryWrites=true';
+  'mongodb+srv://ike:ike@cluster0.stwf1.mongodb.net/lassodDB?retryWrites=true';
 
 mongoose
-  .connect(localDB, {
+  .connect(DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
