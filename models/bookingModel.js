@@ -20,7 +20,6 @@ const bookingSchema = new mongoose.Schema(
       required: [true, 'Please provide your email'],
       unique: true,
       lowercase: true,
-      validate: [validator.isEmail, 'Please provide a valid email'],
     },
     hotel: {
       type: mongoose.Schema.ObjectId,

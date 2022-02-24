@@ -4,20 +4,16 @@ const hotelSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, 'A product must have a name'],
+      required: [true, 'A hotel must have a name'],
       unique: true,
     },
     location: {
       type: String,
-      required: [true, 'A product must have a location'],
+      required: [true, 'A hotel must have a location'],
     },
     photo: {
       type: 'String',
-      required: [true, 'A product must have a photo'],
-    },
-    public_id: {
-      type: 'String',
-      required: [true, 'A product must have a public id'],
+      required: [true, 'A hotel must have a photo'],
     },
     description: {
       type: String,
@@ -36,9 +32,9 @@ const hotelSchema = new mongoose.Schema(
     },
     rooms: [
       {
-        _id: mongoose.Types.ObjectId(),
         name: String,
-        Amount: Number,
+        price: Number,
+        image: String,
       },
     ],
   },
