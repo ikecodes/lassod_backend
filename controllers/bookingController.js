@@ -6,6 +6,9 @@ exports.create = catchAsync(async (req, res, next) => {
     lastname: req.body.lastname,
     email: req.body.email,
     hotel: req.body.hotel,
+    roomname: req.body.roomname,
+    days: req.body.days,
+    amount: req.body.amount,
   });
   res.status(200).json({
     status: 'successfull',

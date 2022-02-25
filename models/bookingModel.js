@@ -25,6 +25,9 @@ const bookingSchema = new mongoose.Schema(
       type: mongoose.Schema.ObjectId,
       ref: 'Hotel',
     },
+    roomname: String,
+    days: Number,
+    Amount: Number,
     time: {
       type: String,
     },
