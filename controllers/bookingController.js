@@ -9,6 +9,7 @@ exports.create = catchAsync(async (req, res, next) => {
     roomname: req.body.roomname,
     days: req.body.days,
     amount: req.body.amount,
+    fulldate: req.body.fulldate,
   });
   res.status(200).json({
     status: 'successfull',

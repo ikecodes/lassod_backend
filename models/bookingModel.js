@@ -27,7 +27,8 @@ const bookingSchema = new mongoose.Schema(
     },
     roomname: String,
     days: Number,
-    Amount: Number,
+    amount: Number,
+    fulldate: String,
     time: {
       type: String,
     },
